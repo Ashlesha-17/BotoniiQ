@@ -24,6 +24,7 @@ load_dotenv()
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-fallback-key')
+    JWT_SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-fallback-key')
 
     DB_USER = os.environ.get('DB_USER')
     DB_PASSWORD = os.environ.get('DB_PASSWORD')
